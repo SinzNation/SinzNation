@@ -1,16 +1,21 @@
-# SinzNation Personal Brand Site
+# SinzNation Vercel Ready Site
 
-Updated version includes:
+This version is rebuilt to avoid deployment path issues.
 
-- Website title changed to SinzNation
-- Stoic black, gray, and white color palette
-- DBZ-inspired SinzNation logo SVG in `/assets`
-- Apparel store focused on one item:
-  "Drink Water and Respect Women" oversized pump cover
-- Reels/TikTok hub
-- Waitlist form placeholder
+Files:
+- index.html
+- styles.css
+- script.js
 
-## Deploying edits to Vercel
+Important:
+Upload these three files directly to the ROOT of your GitHub repository.
 
-Upload or commit these files to the same GitHub repo connected to Vercel.
-Vercel will automatically redeploy after the commit.
+Correct:
+repo/index.html
+repo/styles.css
+repo/script.js
+
+Incorrect:
+repo/sinznation_vercel_ready/index.html
+
+The logo is embedded directly into the HTML, so there is no separate assets folder needed.
