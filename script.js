@@ -14,7 +14,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
     event.preventDefault();
     target.scrollIntoView({ behavior: "smooth" });
-    navLinks?.classList.remove("open");
+    if (navLinks) navLinks.classList.remove("open");
   });
 });
 

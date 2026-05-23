@@ -1,21 +1,23 @@
-# SinzNation Vercel Ready Site
+# SinzNation GitHub / Vercel Ready Site V2
 
-This version is rebuilt to avoid deployment path issues.
+This rebuild includes:
 
-Files:
-- index.html
-- styles.css
-- script.js
+- Your SinzNation logo in assets/sinznation-logo.png
+- Your shirt mockup in assets/drink-water-shirt.png
+- Updated apparel section using the real shirt image
+- Mobile responsive layout
+- GitHub/Vercel-ready static files
 
-Important:
-Upload these three files directly to the ROOT of your GitHub repository.
+Upload the CONTENTS of this ZIP directly to the ROOT of your GitHub repository.
 
-Correct:
-repo/index.html
-repo/styles.css
-repo/script.js
+Correct structure:
 
-Incorrect:
-repo/sinznation_vercel_ready/index.html
+index.html
+styles.css
+script.js
+README.md
+assets/
+  sinznation-logo.png
+  drink-water-shirt.png
 
-The logo is embedded directly into the HTML, so there is no separate assets folder needed.
+Do NOT upload the parent folder itself.
