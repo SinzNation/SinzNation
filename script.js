@@ -17,5 +17,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 document.querySelector(".signup-form").addEventListener("submit", function(e) {
   e.preventDefault();
-  alert("You’re on the list. Connect this form to Mailchimp, Klaviyo, or ConvertKit next.");
+  alert("You're on the SinzNation list. Connect this form to Mailchimp, Klaviyo, or ConvertKit next.");
 });
