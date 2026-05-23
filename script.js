@@ -7,22 +7,41 @@ if (menuBtn && navLinks) {
   });
 }
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(event) {
-    const target = document.querySelector(this.getAttribute("href"));
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const target = document.querySelector(link.getAttribute("href"));
     if (!target) return;
 
     event.preventDefault();
     target.scrollIntoView({ behavior: "smooth" });
-    if (navLinks) navLinks.classList.remove("open");
+
+    if (navLinks) {
+      navLinks.classList.remove("open");
+    }
   });
 });
 
-const signupForm = document.querySelector(".signup-form");
+document.querySelectorAll(".size-grid button").forEach((button) => {
+  button.addEventListener("click", () => {
+    document.querySelectorAll(".size-grid button").forEach((btn) => {
+      btn.classList.remove("selected");
+    });
 
-if (signupForm) {
-  signupForm.addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("You're on the SinzNation list. Connect this form to Mailchimp, Klaviyo, ConvertKit, or Shopify next.");
+    button.classList.add("selected");
   });
-}
+});
+
+document.querySelectorAll("form").forEach((form) => {
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    alert("You're on the SinzNation list. Connect this form to Shopify, Klaviyo, Mailchimp, or ConvertKit next.");
+  });
+});
+
+const cartButtons = document.querySelectorAll(".add-cart, .buy-now");
+
+cartButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    alert("Checkout is not connected yet. Next step: connect Shopify Buy Button, Stripe, or Shopify store.");
+  });
+});

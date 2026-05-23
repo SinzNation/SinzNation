@@ -1,16 +1,18 @@
-# SinzNation GitHub / Vercel Ready Site V2
+# SinzNation Mockup Style Vercel Site
 
-This rebuild includes:
+This is a complete static website built to match the dark ecommerce mockup.
 
-- Your SinzNation logo in assets/sinznation-logo.png
-- Your shirt mockup in assets/drink-water-shirt.png
-- Updated apparel section using the real shirt image
-- Mobile responsive layout
-- GitHub/Vercel-ready static files
+## Included files
 
-Upload the CONTENTS of this ZIP directly to the ROOT of your GitHub repository.
+- index.html
+- styles.css
+- script.js
+- assets/sinznation-logo.png
+- assets/drink-water-shirt.png
 
-Correct structure:
+## Correct GitHub structure
+
+Upload the CONTENTS of this folder directly into your repo root:
 
 index.html
 styles.css
@@ -20,4 +22,14 @@ assets/
   sinznation-logo.png
   drink-water-shirt.png
 
-Do NOT upload the parent folder itself.
+Do not upload the parent folder itself.
+
+## Vercel
+
+Once these files are committed to your GitHub repo, Vercel should automatically redeploy.
+
+## Next steps
+
+- Replace placeholder cart behavior with Shopify Buy Button or Stripe link.
+- Replace footer social text with real TikTok, Instagram, and YouTube links.
+- Connect email forms to Klaviyo, Mailchimp, ConvertKit, or Shopify.
