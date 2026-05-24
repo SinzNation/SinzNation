@@ -1,8 +1,8 @@
-# SinzNation
+# SinzNation V2
 
 Static Vercel-ready site.
 
-Required files in repo root:
+Files must stay in the repo root:
 - index.html
 - styles.css
 - script.js
